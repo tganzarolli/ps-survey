@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html >
+    <head>
+    <meta charset="utf-8">
+    <title>Psychological safety survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"  integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="lib/form.js"></script>
+    <style>
+        .maindiv {
+            margin:10px;
+            margin-left:50px;
+            margin-right:50px;
+        }
+        .container2 {
+            text-align: center;
+            -ms-text-justify: distribute-all-lines;
+            text-justify: distribute-all-lines;
+            font-size:12px;
+            margin:-15px;
+            margin-bottom:0px;
+        }
+        .box {
+            min-width: 100px;
+            vertical-align: top;
+            display: inline-block;
+            *display: inline;
+            zoom: 1;
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+        .ps-template {
+            display:none;
+            margin-top:-10px;
+        }
+        .form-group {
+            margin-left:100px;
+        }
+        .question {
+            margin-top:15px;
+        }
+        .ps-even {
+            background-color:#eeeeee;
+        }
+        .ps-odd {
+            background-color:#dddddd;
+        }
+        .agree {
+            color:green;
+        }
+        .disagree {
+            color:red;
+        }
+    </style>
+    <script type="text/javascript">
+    //<![CDATA[
+        $(document).ready(function() {
+            warmup();
+        });
+    //]]>
+    </script>
+    </head>
+    <body>
+        <div class="maindiv">
+            <h3>Psychological safety survey</h3>
+            <h5 style='margin-left:10px'>The following statements relate to your own individual ideas and experiences,  please mark the response that best reflects them. It's only 6 questions.</h5>
+            <form action="" method="POST">
+                <hr/>
+                <fieldset id='ps-fieldset'>
+                    <div class='ps-template'>
+                        <div class="form-group">
+                            <label class="question">x</label>
+                        </div>
+                        <div class="container2 col-12" >
+                            <div style="margin-left: 10px; margin-right: 10px;" class="form-group box">
+                                <br/>
+                                <label class='disagree'>Strongly disagree</label>
+                            </div>
+                            <div style="margin-left: 10px; margin-right: 10px;" class="form-group box">
+                                <label style="text-decoration:none;">
+                                    1
+                                    <br/>
+                                <input type="radio" name="question-x" value="1" class="answer">
+                                </label>
+                            </div>
+                            <div style="margin-left: 10px; margin-right: 10px;" class="form-group box">
+                                <label>
+                                    2
+                                    <br/>
+                                <input type="radio" name="question-x" value="2" class="answer">
+                                </label>
+                            </div>
+                            <div style="margin-left: 10px; margin-right: 10px;" class="form-group box">
+                                <label>
+                                    3
+                                    <br/>
+                                <input type="radio" name="question-x" value="3" class="answer">
+                                </label>
+                            </div>
+                            <div style="margin-left: 10px; margin-right: 10px;" class="form-group box">
+                                <label>
+                                    4
+                                    <br/>
+                                <input type="radio" name="question-x" value="4" class="answer">
+                                </label>
+                            </div>
+                            <div style="margin-left: 10px; margin-right: 10px;" class="form-group box">
+                                <label>
+                                    5
+                                    <br/>
+                                <input type="radio" name="question-x" value="5" class="answer">
+                                </label>
+                            </div>
+                            <div style="margin-left: 10px; margin-right: 10px;" class="form-group box">
+                                <br/>
+                                <label class='agree'>Strongly agree</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row row--normal">
+                        <div class="form-group col-sm-2">
+                            <input type="submit" class="btn btn-primary" name="next" value="Submit"/>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
+
